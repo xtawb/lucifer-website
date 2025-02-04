@@ -20,10 +20,26 @@ body {
   background: #111;
 }
 
-.header .logo {
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
   font-size: 24px;
   font-weight: bold;
   color: #e60000;
+}
+
+.instagram-icon {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.instagram-icon:hover {
+  color: #E4405F;
 }
 
 .nav {
@@ -117,7 +133,17 @@ body {
     justify-content: space-between;
   }
 
-  .header .logo {
+  .logo-container {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .instagram-icon {
     font-size: 22px;
   }
 
@@ -134,6 +160,10 @@ body {
 @media (min-width: 1024px) {
   .header .logo {
     font-size: 28px;
+  }
+
+  .instagram-icon {
+    font-size: 24px;
   }
 
   .nav a {
