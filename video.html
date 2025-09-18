@@ -44,16 +44,16 @@
 
   <video id="myVideo" autoplay loop muted playsinline>
     <source src="video.mp4" type="video/mp4">
-    متصفحك لا يدعم تشغيل الفيديو.
+    Your browser doesn't support video playback.
   </video>
 
   <a href="index.html" class="back-button">Back TO Store</a>
 
   <script>
-    // تشغيل الفيديو تلقائيًا عند تحميل الصفحة
+    // Automatically play video when page loads
     document.addEventListener("DOMContentLoaded", function() {
       var video = document.getElementById("myVideo");
-      video.play().catch(error => console.log("لم يتم تشغيل الفيديو تلقائيًا:", error));
+      video.play().catch(error => console.log("Video doesn't play automatically:", error));
     });
   </script>
 
