@@ -140,7 +140,7 @@ body {
 
 /* --- Media Queries --- */
 
-/* للشاشات الصغيرة (الهواتف) */
+/* For small screens (Phones) */
 @media (max-width: 768px) {
   .header {
     flex-wrap: wrap;
@@ -170,7 +170,7 @@ body {
   }
 }
 
-/* للشاشات الكبيرة (أجهزة الكمبيوتر) */
+/* For big screens (Computers) */
 @media (min-width: 1024px) {
   .header .logo {
     font-size: 28px;
